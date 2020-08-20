@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    text-indent: 10px;
+}
+body {
+    background-color: rgb(115, 94, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+h1 {
+    font-family: cursive;
+    font-size: 35pt;
+    color: rgb(26, 25, 25);
+    margin: auto;
+}
+section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px 0px;
+    padding:10px;
+}
+article {
+    display: block;
+    float: initial;
+    box-sizing: border-box;
+    width: 30%;
+    height: 60%;
+    background-color: rgba(184, 111, 252, 0.643);
+    text-align: justify;
+    border:2px solid rgba(250, 250, 250, 0.596);
+    padding: 10px 5px;
+    margin: 80px auto;
+}
+h2 {
+    display: block;
+    float: right;
+    font-family: cursive;
+    border: 1px solid rgba(250, 250, 250, 0.596);
+    border-image: initial;
+    margin: 0px 0px 5px 303px;
+    padding: 5px 15px;
+}
+.first h2 {
+    background-color: rgba(146, 87, 39, 0.5);
+}
+.second h2 {
+    background-color: rgba(27, 106, 109, 0.5);
+}
+.third h2 {
+    background-color: rgba(196, 36, 148, 0.5);
+}
+
+/* Responsivo Celular*/
+@media (max-width: 767px) {
+
+article {
+    width: 100%;
+    margin: 25px auto;
+}
+
+section {
+    flex-wrap: wrap;
+}
+}
+/*responsivo Tablet*/
+@media (max-width: 991px) and (min-width: 768px) {
+    section {
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+article {
+    width: 45%;
+    margin: 50px 15px;
+}
+.third {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.third h2 {
+    margin-left: 90%;
+}
+}
